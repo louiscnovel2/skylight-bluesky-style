@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import { VueQueryPlugin } from "vue-query";
 import "spectre.css";
+import "./style.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import App from "@/App.vue";
