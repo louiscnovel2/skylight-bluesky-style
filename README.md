@@ -6,6 +6,8 @@ Copyright (c) [penpenpng](https://snort.social/p/npub133vj8ycevdle0cq8mtgddq0xtn
 
 Released under the MIT license
 
+https://opensource.org/license/mit/
+
 ## 本家はこちら↓
 
 Minimal bsky web client implementation.
