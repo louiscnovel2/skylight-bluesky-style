@@ -3,7 +3,7 @@ border-color: #3482f6;
 background-color: #3482f6;
 padding: 0px 13px 0px 30px;
 border-radius: 20px;
-background-image: url("https://louis-c-novel.com/wp-content/uploads/post6.png");
+background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
 background-size: 25px 25px;
 background-repeat: no-repeat;
 background-position: left 5px center;
@@ -14,7 +14,7 @@ background-position: left 5px center;
 border-color: #3482f6;
 background-color: #3482f6;
 border-radius: 20px;
-background-image: url("https://louis-c-novel.com/wp-content/uploads/post6.png");
+background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
 background-size: 25px 25px;
 background-repeat: no-repeat;
 background-position: left 5px center;
@@ -25,7 +25,7 @@ background-position: left 5px center;
 background-color: #0a62e4;
 border-color: #0a62e4;
 border-radius: 20px;
-background-image: url("https://louis-c-novel.com/wp-content/uploads/post6.png");
+background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
 background-size: 25px 25px;
 background-repeat: no-repeat;
 background-position: left 5px center;
@@ -35,7 +35,7 @@ background-position: left 5px center;
 background-color: #0a62e4;
 border-color: #0a62e4;
 border-radius: 20px;
-background-image: url("https://louis-c-novel.com/wp-content/uploads/post6.png");
+background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
 background-size: 25px 25px;
 background-repeat: no-repeat;
 background-position: left 5px center;
@@ -45,7 +45,7 @@ background-position: left 5px center;
 background-color: #0a62e4;
 border-color: #0a62e4;
 border-radius: 20px;
-background-image: url("https://louis-c-novel.com/wp-content/uploads/post6.png");
+background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
 background-size: 25px 25px;
 background-repeat: no-repeat;
 background-position: left 5px center;
@@ -62,7 +62,7 @@ background-image: none;
 border-color: #3482f6;
 background-color: #3482f6;
 border-radius: 20px;
-background-image: url("https://louis-c-novel.com/wp-content/uploads/post6.png");
+background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
 background-size: 25px 25px;
 background-repeat: no-repeat;
 background-position: left 5px center;
@@ -72,7 +72,7 @@ background-position: left 5px center;
 border-color: #3482f6;
 background-color: #3482f6;
 border-radius: 20px;
-background-image: url("https://louis-c-novel.com/wp-content/uploads/post6.png");
+background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
 background-size: 25px 25px;
 background-repeat: no-repeat;
 background-position: left 5px center;
@@ -128,7 +128,7 @@ color:#fff;
 
 /* Search button Design */
 .input-group .form-input:last-child:not(:first-child), .input-group .form-select:last-child:not(:first-child), .input-group .input-group-addon:last-child:not(:first-child), .input-group .input-group-btn:last-child:not(:first-child){
-    background-image: url("https://louis-c-novel.com/wp-content/uploads/search1.png");
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/search1.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
     background-position: left 5px center;
@@ -136,14 +136,14 @@ color:#fff;
 
 /* Take off button Design */
 button[type="submit"]:last-child{
-    background-image: url("https://louis-c-novel.com/wp-content/uploads/take_off1.png");
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/take_off1.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
     background-position: left 5px center;
 }
 
 button[type="submit"]:last-child:hover{
-    background-image: url("https://louis-c-novel.com/wp-content/uploads/take_off1.png");
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/take_off1.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
     background-position: left 5px center;
