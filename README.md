@@ -80,7 +80,7 @@ npm run dev
 これをApache2のドキュメントルートにコピーします。
 
 ```
-cp -pR /home/louis/skylight-bluesky-style/* /var/www/html/
+cp -pR /home/louis/skylight-bluesky-style/dist/* /var/www/html/
 ```
 
 http://localhost:8080 にアクセスして、ちゃんと表示されていることを確認します。
