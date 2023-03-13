@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "skylight B",
-  "start_url": "./index.html",
+  "start_url": "https://skylight.louis-c-novel.com/#/",
   "theme_color": "#3482f6",
   "categories": [
     "social"
@@ -15,11 +15,11 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "./192.png",
+      "src": "https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/192.png",
       "type": "image/png"
     },
     {
-      "src": "./512.png",
+      "src": "https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/512.png",
       "type": "image/png"
     }
   ],
