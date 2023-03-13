@@ -6,6 +6,10 @@ Skylight Bluesky Style
 
 https://skylight.louis-c-novel.com/#/
 
+## 環境
+
+・Raspberry Pi 3 Model B
+
 ## インストール
 
 ### Node.jsとnpmのインストール
