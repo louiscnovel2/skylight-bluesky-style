@@ -1,81 +1,81 @@
-.btn.btn-primary{
-border-color: #3482f6;
-background-color: #3482f6;
-padding: 0px 13px 0px 30px;
-border-radius: 20px;
-background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
-background-size: 25px 25px;
-background-repeat: no-repeat;
-background-position: left 5px center;
+.btn.btn-primary {
+    border-color: #3482f6;
+    background-color: #3482f6;
+    padding: 0px 13px 0px 30px;
+    border-radius: 20px;
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
 }
 
 
-.btn.btn-primary:link{
-border-color: #3482f6;
-background-color: #3482f6;
-border-radius: 20px;
-background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
-background-size: 25px 25px;
-background-repeat: no-repeat;
-background-position: left 5px center;
+.btn.btn-primary:link {
+    border-color: #3482f6;
+    background-color: #3482f6;
+    border-radius: 20px;
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
 }
 
 
-.btn.btn-primary:hover{
-background-color: #0a62e4;
-border-color: #0a62e4;
-border-radius: 20px;
-background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
-background-size: 25px 25px;
-background-repeat: no-repeat;
-background-position: left 5px center;
+.btn.btn-primary:hover {
+    background-color: #0a62e4;
+    border-color: #0a62e4;
+    border-radius: 20px;
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
 }
 
-.btn.btn-primary:visited{
-background-color: #0a62e4;
-border-color: #0a62e4;
-border-radius: 20px;
-background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
-background-size: 25px 25px;
-background-repeat: no-repeat;
-background-position: left 5px center;
+.btn.btn-primary:visited {
+    background-color: #0a62e4;
+    border-color: #0a62e4;
+    border-radius: 20px;
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
 }
 
-.btn.btn-primary:focus{
-background-color: #0a62e4;
-border-color: #0a62e4;
-border-radius: 20px;
-background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
-background-size: 25px 25px;
-background-repeat: no-repeat;
-background-position: left 5px center;
+.btn.btn-primary:focus {
+    background-color: #0a62e4;
+    border-color: #0a62e4;
+    border-radius: 20px;
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
 }
 
-.btn.btn-primary.loading{
-background-color: #0a62e4;
-border-color: #0a62e4;
-border-radius: 20px;
-background-image: none;
+.btn.btn-primary.loading {
+    background-color: #0a62e4;
+    border-color: #0a62e4;
+    border-radius: 20px;
+    background-image: none;
 }
 
-.btn.btn-primary.loading:link{
-border-color: #3482f6;
-background-color: #3482f6;
-border-radius: 20px;
-background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
-background-size: 25px 25px;
-background-repeat: no-repeat;
-background-position: left 5px center;
+.btn.btn-primary.loading:link {
+    border-color: #3482f6;
+    background-color: #3482f6;
+    border-radius: 20px;
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
 }
 
-.btn.btn-primary.loading:visited{
-border-color: #3482f6;
-background-color: #3482f6;
-border-radius: 20px;
-background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
-background-size: 25px 25px;
-background-repeat: no-repeat;
-background-position: left 5px center;
+.btn.btn-primary.loading:visited {
+    border-color: #3482f6;
+    background-color: #3482f6;
+    border-radius: 20px;
+    background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/post6.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
 }
 
 
@@ -96,7 +96,7 @@ background-position: left 5px center;
     padding: 0.25rem 0.4rem;
     text-align: center;
     text-decoration: none;
-    transition: background .2s,border .2s,box-shadow .2s,color .2s;
+    transition: background .2s, border .2s, box-shadow .2s, color .2s;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -106,28 +106,31 @@ background-position: left 5px center;
 }
 
 /* フォローボタンにアイコンが表示されてしまう問題を修正 */
-.column.col-auto > .btn.btn-primary{
+.column.col-auto > .btn.btn-primary {
     background-image: none;
     padding: 0px 13px 0px 13px;
 }
 
 /* Refresh button Design */
-button.btn.btn-secondary.col-ml-auto{
-border-color: #3482f6;
-background-color: #fff;
-color: #3482f6;
-border-radius: 20px;
+button.btn.btn-secondary.col-ml-auto {
+    border-color: #3482f6;
+    background-color: #fff;
+    color: #3482f6;
+    border-radius: 20px;
 }
 
-button.btn.btn-secondary.col-ml-auto:hover{
-background-color: #0a62e4;
-border-color: #0a62e4;
-border-radius: 20px;
-color:#fff;
+button.btn.btn-secondary.col-ml-auto:hover {
+    background-color: #0a62e4;
+    border-color: #0a62e4;
+    border-radius: 20px;
+    color: #fff;
 }
 
 /* Search button Design */
-.input-group .form-input:last-child:not(:first-child), .input-group .form-select:last-child:not(:first-child), .input-group .input-group-addon:last-child:not(:first-child), .input-group .input-group-btn:last-child:not(:first-child){
+.input-group .form-input:last-child:not(:first-child),
+.input-group .form-select:last-child:not(:first-child),
+.input-group .input-group-addon:last-child:not(:first-child),
+.input-group .input-group-btn:last-child:not(:first-child) {
     background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/search1.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
@@ -135,14 +138,14 @@ color:#fff;
 }
 
 /* Take off button Design */
-button[type="submit"]:last-child{
+button[type="submit"]:last-child {
     background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/take_off1.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
     background-position: left 5px center;
 }
 
-button[type="submit"]:last-child:hover{
+button[type="submit"]:last-child:hover {
     background-image: url("https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/src/take_off1.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
@@ -156,3 +159,25 @@ button[type="submit"]:last-child:hover{
     border-radius: 20px;
     color: #3482f6;
 }
+
+/* 横スクロールを禁止する */
+html,body{
+    overflow-x: hidden;
+}
+
+/* タイムラインの横幅の最大値を変更 */
+/*
+main[data-v-6261e796] {
+    max-width: 750px;
+    margin: auto;
+}
+*/
+
+
+
+
+
+
+
+
+
