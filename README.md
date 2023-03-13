@@ -83,6 +83,8 @@ npm run dev
 
 これをApacheのドキュメントルートにコピーします。
 
+**louisは自分のユーザー名に変えてください！！**
+
 ```
 cp -pR /home/louis/skylight-bluesky-style/dist/* /var/www/html/
 ```
