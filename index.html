@@ -5,6 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+    if('serviceWorker' in navigator){
+	navigator.serviceWorker.register('/serviceworker.js').then(function(){
+		console.log("Service Worker is registered!!");
+	});
+}  
+    </script>
     <title>Skylight Bluesky Style</title>
   </head>
   <body>
