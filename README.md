@@ -54,7 +54,7 @@ sudo apt-get install apache2
 
 https://qiita.com/takey/items/75e6984468f0f6870a97
 
-##ダウンロード
+## ダウンロード
 
 ```
 git clone https://github.com/louiscnovel2/skylight-bluesky-style.git
