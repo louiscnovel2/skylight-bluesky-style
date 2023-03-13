@@ -79,6 +79,17 @@ npm install
 npm run dev
 ```
 
+http://localhost:8080 にアクセスして、ちゃんと表示されていることを確認します。
+
+## 本番環境で稼働する場合
+
+もしポート開放がされていて、本番環境でビルドしたい場合はこのように入力して下さい。
+
+```
+npm install
+npm run build
+```
+
 ビルドするとdistディレクトリが生成されます。
 
 これをApacheのドキュメントルートにコピーします。
@@ -89,14 +100,9 @@ npm run dev
 cp -pR /home/louis/skylight-bluesky-style/dist/* /var/www/html/
 ```
 
-http://localhost:8080 にアクセスして、ちゃんと表示されていることを確認します。
+これでドメインにアクセスするとちゃんと表示されるはずです。
 
-もしポート開放がされていて、本番環境でビルドしたい場合はこのように入力して下さい。
-
-```
-npm install
-npm run build
-```
+お疲れ様でした。
 
 ■出典
 
