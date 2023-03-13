@@ -5,7 +5,6 @@
   "display": "standalone",
   "name": "Skylight Bluesky Style",
   "orientation": "any",
-  "scope": "/",
   "short_name": "Skylight B",
   "start_url": "https://skylight.louis-c-novel.com/#/",
   "theme_color": "#3482f6",
