@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "skylight B",
-  "start_url": "/",
+  "start_url": "./index.html",
   "theme_color": "#3482f6",
   "categories": [
     "social"
@@ -15,11 +15,11 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "192.png",
+      "src": "./192.png",
       "type": "image/png"
     },
     {
-      "src": "512.png",
+      "src": "./512.png",
       "type": "image/png"
     }
   ],
