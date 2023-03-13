@@ -81,7 +81,7 @@ npm run dev
 
 ビルドするとdistディレクトリが生成されます。
 
-これをApache2のドキュメントルートにコピーします。
+これをApacheのドキュメントルートにコピーします。
 
 ```
 cp -pR /home/louis/skylight-bluesky-style/dist/* /var/www/html/
