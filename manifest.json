@@ -1,0 +1,27 @@
+{
+  "background_color": "#ffffff",
+  "description": "Blueskyクライアント「Bluesky」のフォーク（派生）したクライアントです。Bluesky風のデザインとなっています。",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Skylight Bluesky Style",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "skylight B",
+  "start_url": "/",
+  "theme_color": "#3482f6",
+  "categories": [
+    "social"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "192.png",
+      "type": "image/png"
+    },
+    {
+      "src": "512.png",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": []
+}
