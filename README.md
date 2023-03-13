@@ -16,6 +16,10 @@ https://github.com/louiscnovel2/skylight-bluesky-style/blob/main/LICENSE
 
 ## 本家はこちら↓
 
+本家のGithubページはこれ↓
+
+https://github.com/penpenpng/skylight
+
 Minimal bsky web client implementation.
 
 https://penpenpng.github.io/skylight/
