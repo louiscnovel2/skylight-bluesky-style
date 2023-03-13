@@ -8,9 +8,9 @@ https://skylight.louis-c-novel.com/#/
 
 ## インストール
 
-### Node.JSとnpmのインストール
+### Node.jsとnpmのインストール
 
-aptでnodejsとnpmをインストールします。
+aptでNode.jsとnpmをインストールします。
 
 ```
 sudo apt update
@@ -40,11 +40,19 @@ vue-cliをインストールします。3系になって名称が変わったよ
 sudo npm install -g @vue/cli
 ```
 
+■出典
+
+https://webjin.work/install-vue-js-on-ubuntu-16-04-at-npm/
+
 ### Apacheのインストール
 
 ```
 sudo apt-get install apache2
 ```
+
+■出典
+
+https://qiita.com/takey/items/75e6984468f0f6870a97
 
 ##ダウンロード
 
@@ -83,6 +91,10 @@ http://localhost:8080 にアクセスして、ちゃんと表示されている�
 npm install
 npm run build
 ```
+
+■出典
+
+https://asameshicode.com/deploy-vue-app/
 
 ## 著作権とライセンス表示
 
