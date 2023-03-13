@@ -98,7 +98,7 @@ https://asameshicode.com/deploy-vue-app/
 
 ## 著作権とライセンス表示
 
-Copyright (c) [penpenpng](https://snort.social/p/npub133vj8ycevdle0cq8mtgddq0xtn34kxkwxvak983dx0u5vhqnycyqj6tcza) Skylight All Rights Reserved.
+Copyright (c) 2023 [penpenpng](https://snort.social/p/npub133vj8ycevdle0cq8mtgddq0xtn34kxkwxvak983dx0u5vhqnycyqj6tcza) Skylight All Rights Reserved.
 
 Released under the MIT license
 
