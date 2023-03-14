@@ -85,7 +85,7 @@
     appearance: none;
     background: #fff;
     border: 0.05rem solid #3482f6;
-    border-radius: 0.1rem;
+    border-radius: 20px;
     color: #3482f6;
     cursor: pointer;
     display: inline-block;
@@ -103,6 +103,12 @@
     user-select: none;
     vertical-align: middle;
     white-space: nowrap;
+}
+
+.btn:active{
+    border-color: #3482f6;
+    background-color: #3482f6;
+    color: #FFFFFF;
 }
 
 /* フォローボタンにアイコンが表示されてしまう問題を修正 */
