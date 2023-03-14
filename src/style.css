@@ -171,6 +171,12 @@ html,body{
     border-color: #3482f6;
 }
 
+/* 選択されているメニューの色を変える */
+.tab .tab-item.active a, .tab .tab-item a.active{
+    border-bottom-color: #3282f6;
+    color: #3282f6;
+}
+
 /* タイムラインの横幅の最大値を変更 */
 /*
 main[data-v-6261e796] {
