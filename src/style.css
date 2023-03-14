@@ -165,6 +165,12 @@ html,body{
     overflow-x: hidden;
 }
 
+/* 投稿フォームを角丸にし、線の色を変える */
+.input-group .form-input, .input-group .form-select{
+    border-radius: 13px;
+    border-color: #3482f6;
+}
+
 /* タイムラインの横幅の最大値を変更 */
 /*
 main[data-v-6261e796] {
