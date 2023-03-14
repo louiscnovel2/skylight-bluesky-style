@@ -102,8 +102,6 @@ cp -pR /home/louis/skylight-bluesky-style/dist/* /var/www/html/
 
 これでドメインにアクセスするとちゃんと表示されるはずです。
 
-お疲れ様でした。
-
 ■出典
 
 https://asameshicode.com/deploy-vue-app/
@@ -119,6 +117,22 @@ PWAに対応するには、`/var/www/html`に以下のファイルを全部コ�
 ・192.png
 
 ・512.png
+
+その後、index.htmlを書き換えます。
+
+```
+vim /var/www/html/index.html
+```
+
+`href`の値を全部消して`./manifest.json`へと書き換えて下さい。
+
+```
+<link rel="manifest" href="./manifest.json">
+```
+
+そうするとPWAのインストールボタンが表示されます。
+
+お疲れ様でした。
 
 ## 著作権とライセンス表示
 
