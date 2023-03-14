@@ -108,6 +108,18 @@ cp -pR /home/louis/skylight-bluesky-style/dist/* /var/www/html/
 
 https://asameshicode.com/deploy-vue-app/
 
+## PWA対応について
+
+PWAに対応するには、`/var/www/html`に以下のファイルを全部コピーして下さい。
+
+・manifest.json
+
+・serviceworker.js
+
+・192.png
+
+・512.png
+
 ## 著作権とライセンス表示
 
 Copyright (c) 2023 [penpenpng](https://snort.social/p/npub133vj8ycevdle0cq8mtgddq0xtn34kxkwxvak983dx0u5vhqnycyqj6tcza) Skylight All Rights Reserved.
