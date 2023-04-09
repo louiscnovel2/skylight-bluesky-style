@@ -117,6 +117,11 @@
     padding: 0px 13px 0px 13px;
 }
 
+.btn.btn-primary.mr-2:first-child{
+    background-image: none;
+    padding: 0px 13px 0px 13px;
+}
+
 /* Refresh button Design */
 button.btn.btn-secondary.col-ml-auto {
     border-color: #3482f6;
@@ -190,12 +195,6 @@ main[data-v-6261e796] {
     margin: auto;
 }
 */
-
-
-
-
-
-
 
 
 
