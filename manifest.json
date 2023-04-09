@@ -15,14 +15,17 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "https://github.com/louiscnovel2/skylight-bluesky-style/blob/main/192.png",
+      "src": "./192.png",
+      "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://github.com/louiscnovel2/skylight-bluesky-style/blob/main/512.png",
+      "src": "./512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "shortcuts": []
 }
+
 
