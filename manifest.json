@@ -7,6 +7,7 @@
   "orientation": "any",
   "short_name": "Skylight B",
   "start_url": "https://skylight.louis-c-novel.com/#/",
+  "id": "/#/",
   "theme_color": "#3482f6",
   "categories": [
     "social"
@@ -14,13 +15,14 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/192.png",
+      "src": "https://github.com/louiscnovel2/skylight-bluesky-style/blob/main/192.png",
       "type": "image/png"
     },
     {
-      "src": "https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/512.png",
+      "src": "https://github.com/louiscnovel2/skylight-bluesky-style/blob/main/512.png",
       "type": "image/png"
     }
   ],
   "shortcuts": []
 }
+
