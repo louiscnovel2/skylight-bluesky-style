@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { computed, onErrorCaptured } from "vue";
+import { onErrorCaptured } from "vue";
 import { useRoute, useRouter } from "vue-router";
 
-import TheHeader from "@/components/TheHeader.vue";
 import Loadable from "@/components/common/Loadable.vue";
-import { AtpError } from "@/lib/atp";
+import TheHeader from "@/components/TheHeader.vue";
+import { AtpError } from "@/lib/bsky";
 
 const route = useRoute();
 const router = useRouter();

@@ -1,4 +1,4 @@
-import { onMounted, onBeforeUnmount, Ref, toRaw, unref } from "vue";
+import { onBeforeUnmount, onMounted, Ref, toRaw, unref } from "vue";
 
 export const useOnClickOutside = (
   el: Ref<HTMLElement | undefined>,
@@ -17,10 +17,11 @@ export const useOnClickOutside = (
   });
 };
 
-export const useObjectInspector = (obj: {}) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const useObjectInspector = (obj: any) => {
   return {
     printObject: () => {
-      console.log(toRaw(unref(obj)));
+      console.info(toRaw(unref(obj)));
     },
     copyObject: () => {
       navigator.clipboard.writeText(JSON.stringify(toRaw(unref(obj))));

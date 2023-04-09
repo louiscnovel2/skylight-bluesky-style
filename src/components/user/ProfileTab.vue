@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import { PropType } from "vue";
-import { ActorProfile } from "@/lib/atp";
+
+import { ProfileView } from "@/lib/bsky";
 
 defineEmits<{ (ev: "switch", tab: string): void }>();
 defineProps({
   tab: {
     type: String,
+    required: true,
   },
   user: {
-    type: Object as PropType<ActorProfile>,
+    type: Object as PropType<ProfileView>,
     required: true,
   },
 });

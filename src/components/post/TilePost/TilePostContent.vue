@@ -1,24 +1,40 @@
 <script setup lang="ts">
-import { PropType, computed } from "vue";
+import { computed, PropType, toRaw } from "vue";
 
 import Username from "@/components/common/Username.vue";
-
-import { Feed, Entity } from "@/lib/atp";
+import { Entity, Facet, FacetFeature, FeedViewPost } from "@/lib/bsky";
 
 const props = defineProps({
-  feed: { type: Object as PropType<Feed>, required: true },
+  feed: { type: Object as PropType<FeedViewPost>, required: true },
 });
 
 const post = computed(() => props.feed.post);
 const replyTo = computed(() => props.feed.reply?.parent.author);
 
-const getElements = (text: string, entities: Entity[]) => {
+const getElements = (text: string, entities: Entity[], facets: Facet[]) => {
   const arr: Array<
     | { type: "text"; text: string }
     | { type: "link"; text: string; href: string }
     | { type: "mention"; text: string; href: string }
   > = [];
-  const ent = [...entities].sort((a, b) => a.index.start - b.index.start);
+  const bytes = Array.from(new TextEncoder().encode(text));
+  const decoder = new TextDecoder();
+  const decode = (arr: number[]) => decoder.decode(Uint8Array.from(arr));
+  const getPos = (idx: number): number => decode(bytes.slice(0, idx)).length;
+  const ent: Entity[] = [
+    ...entities,
+    ...facets.map((e) => {
+      const feat = e.features[0];
+      return {
+        type: FacetFeature.isLink(feat) ? "link" : "mention",
+        index: {
+          start: getPos(e.index.byteStart),
+          end: getPos(e.index.byteEnd),
+        },
+        value: FacetFeature.isLink(feat) ? feat.uri : feat.did,
+      };
+    }),
+  ].sort((a, b) => a.index.start - b.index.start);
   let idx = 0;
 
   for (const e of ent) {
@@ -27,7 +43,7 @@ const getElements = (text: string, entities: Entity[]) => {
       text: text.slice(idx, e.index.start),
     });
     arr.push({
-      type: e.type,
+      type: e.type as "link" | "mention" /* FIXME */,
       text: text.slice(e.index.start, e.index.end),
       href: e.value,
     });
@@ -51,16 +67,23 @@ const getElements = (text: string, entities: Entity[]) => {
     <template
       v-for="(e, idx) in getElements(
         post.record.text,
-        post.record.entities || []
+        post.record.entities || [],
+        post.record.facets || []
       )"
-      ><span v-if="e.type === 'text'" :key="idx">{{ e.text }}</span
+      ><span v-if="e.type === 'text'" :key="`text-${idx}`">{{ e.text }}</span
       ><RouterLink
-        v-else-if="e.type === 'mention'"
+        v-else-if="e.type === 'mention' && e.href"
+        :key="`mention-${idx}`"
         :to="{ name: 'profile', params: { actor: e.href } }"
         >{{ e.text }}</RouterLink
-      ><a v-else :href="e.href" target="_blank" class="line-clamp-1">{{
-        e.text
-      }}</a>
+      ><a
+        v-else-if="e.type === 'link' && e.href"
+        :key="`link-${idx}`"
+        :href="e.href"
+        target="_blank"
+        class="line-clamp-1"
+        >{{ e.text }}</a
+      >
     </template>
   </div>
 </template>

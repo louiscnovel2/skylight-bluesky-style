@@ -1,28 +1,27 @@
 <script setup lang="ts">
-import { PropType, computed } from "vue";
+import { computed, PropType } from "vue";
 import { useRoute } from "vue-router";
 
 import Avatar from "@/components/common/Avatar.vue";
 import Dropdown from "@/components/common/Dropdown.vue";
-import RepostChip from "@/components/post/TilePost/TilePostRepostChip.vue";
-import Header from "@/components/post/TilePost/TilePostHeader.vue";
-import Content from "@/components/post/TilePost/TilePostContent.vue";
 import Actions from "@/components/post/TilePost/TilePostActions.vue";
-import EmbedImage from "@/components/post/TilePost/TilePostEmbedImage.vue";
+import Content from "@/components/post/TilePost/TilePostContent.vue";
 import EmbedExternal from "@/components/post/TilePost/TilePostEmbedExternal.vue";
+import EmbedImage from "@/components/post/TilePost/TilePostEmbedImage.vue";
 import EmbedRecord from "@/components/post/TilePost/TilePostEmbedRecord.vue";
-
-import { Embed, Feed, isMe, deletePost } from "@/lib/atp";
+import EmbedRecordNotFound from "@/components/post/TilePost/TilePostEmbedRecordNotFound.vue";
+import Header from "@/components/post/TilePost/TilePostHeader.vue";
+import RepostChip from "@/components/post/TilePost/TilePostRepostChip.vue";
+import { Embed, FeedViewPost, isMe, Reason } from "@/lib/bsky";
 import { useObjectInspector } from "@/lib/composable";
-import { useAuthorFeedFetch, useHomeTimelineFetch } from "@/lib/query";
+import { useDeletePostMutation } from "@/lib/query";
 
 const props = defineProps({
-  feed: { type: Object as PropType<Feed>, required: true },
+  feed: { type: Object as PropType<FeedViewPost>, required: true },
 });
 
 const { printObject, copyObject } = useObjectInspector(props.feed);
-const refetchAuthorFeed = useAuthorFeedFetch();
-const refetchHomeTimeline = useHomeTimelineFetch();
+const { mutate: deletePost } = useDeletePostMutation();
 
 const post = computed(() => props.feed.post);
 const route = useRoute();
@@ -42,20 +41,28 @@ const menu = computed(() => {
   return keys;
 });
 
-const deletePostAndRefetch = async () => {
-  await deletePost({ uri: props.feed.post.uri });
-  if (route.name === "my-profile") {
-    refetchAuthorFeed();
-  } else if (route.name === "index") {
-    refetchHomeTimeline();
-  }
+const goToPost = () => {
+  // NOTE: Not implemented
+  // router.push({
+  //   name: "post-uri-resolver",
+  //   params: {
+  //     uri: props.feed.post.uri,
+  //   },
+  // });
 };
 </script>
 
 <template>
   <div class="tile-post hoverable">
-    <RepostChip v-if="feed.reason?.by" :reposted-by="feed.reason?.by" />
-    <article class="tile" :class="{ 'pl-2': feed.reason?.by }">
+    <RepostChip
+      v-if="Reason.isRepost(feed.reason)"
+      :reposted-by="feed.reason.by"
+    />
+    <article
+      class="tile c-hand"
+      :class="{ 'pl-2': feed.reason?.by }"
+      @click="goToPost"
+    >
       <div class="tile-icon">
         <Avatar
           :src="post.author.avatar"
@@ -63,9 +70,9 @@ const deletePostAndRefetch = async () => {
           :display-name="post.author.displayName"
         />
       </div>
-      <div class="tile-content">
+      <div class="tile-content" @click.stop>
         <div class="tile-title">
-          <Header :post="feed.post" />
+          <Header :feed="feed" />
         </div>
         <div class="tile-subtitle">
           <Content :feed="feed" />
@@ -81,10 +88,12 @@ const deletePostAndRefetch = async () => {
           class="mt-3"
         />
         <EmbedRecord
-          v-else-if="
-            Embed.isRecord(feed.post.embed) ||
-            Embed.isRecordNotFound(feed.post.embed)
-          "
+          v-else-if="Embed.isRecord(feed.post.embed)"
+          :embed="feed.post.embed"
+          class="mt-3"
+        />
+        <EmbedRecordNotFound
+          v-else-if="Embed.isRecordNotFound(feed.post.embed)"
           :embed="feed.post.embed"
           class="mt-3"
         />
@@ -94,9 +103,10 @@ const deletePostAndRefetch = async () => {
         <Dropdown
           :keys="menu"
           right
-          @delete-post="deletePostAndRefetch"
+          @delete-post="() => deletePost({ uri: feed.post.uri })"
           @print-object="printObject"
           @copy-object="copyObject"
+          @click.stop
         >
           <template #delete-post>Delete Post</template>
           <template #print-object>Print Object</template>

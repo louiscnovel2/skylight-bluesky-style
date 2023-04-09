@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { reactive, watch, toRaw, PropType } from "vue";
 import twtext from "twitter-text";
+import { PropType, reactive, toRaw, watch } from "vue";
 
 import ButtonAsync from "@/components/common/ButtonAsync.vue";
-
-import { ReplyRef } from "@/lib/atp";
-import { smartMerge, debounce } from "@/lib/algorithm";
+import { debounce, smartMerge } from "@/lib/algorithm";
+import { FeedViewPost } from "@/lib/bsky";
 import { usePostMutation } from "@/lib/query";
 
 const emits = defineEmits<{
@@ -13,8 +12,9 @@ const emits = defineEmits<{
   (ev: "error"): void;
 }>();
 const props = defineProps({
-  replay: {
-    type: Object as PropType<ReplyRef>,
+  replyTo: {
+    type: Object as PropType<FeedViewPost>,
+    default: undefined,
   },
 });
 
@@ -69,11 +69,10 @@ const submit = async () => {
   state.urls = [];
 
   try {
-    await postText({ text, urls, reply: props?.replay });
+    await postText({ text, urls, replyTo: props.replyTo });
     emits("success");
   } catch {
     emits("error");
-  } finally {
   }
 };
 const onkeydown = (ev: KeyboardEvent) => {
@@ -98,7 +97,7 @@ const onkeydown = (ev: KeyboardEvent) => {
     <div class="d-flex">
       <ButtonAsync
         class="btn btn-primary input-group-btn column col-auto"
-        :onClick="submit"
+        :on-click="submit"
         :force-loading="processingPost"
       >
         Submit

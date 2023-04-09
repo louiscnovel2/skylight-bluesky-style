@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref, reactive } from "vue";
+import { reactive } from "vue";
 
 import ButtonAsync from "@/components/common/ButtonAsync.vue";
 import ModalChangeHandle from "@/components/ModalChangeHandle.vue";
-import { useSettings, updateSettings } from "@/lib/settings";
+import { updateSettings,useSettings } from "@/lib/settings";
 
 const settings = useSettings();
 const state = reactive({
@@ -30,8 +30,8 @@ const state = reactive({
   <div>
     <ButtonAsync
       class="btn"
-      @click="state.showsModalChangeHandle = true"
       :force-loading="state.loadingModalChangeHandle"
+      @click="state.showsModalChangeHandle = true"
     >
       Edit your handle...
     </ButtonAsync>

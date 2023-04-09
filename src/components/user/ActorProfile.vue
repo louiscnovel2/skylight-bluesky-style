@@ -1,30 +1,25 @@
 <script setup lang="ts">
-import { reactive, Ref } from "vue";
-
-import Avatar from "@/components/common/Avatar.vue";
-import Loadable from "@/components/common/Loadable.vue";
-import Dropdown from "@/components/common/Dropdown.vue";
-import ListUsers from "@/components/user/ListUsers.vue";
-import ProfileTab from "@/components/user/ProfileTab.vue";
-import ButtonFollow from "@/components/user/ButtonFollow.vue";
-import ListPosts from "@/components/post/ListPosts.vue";
-
-import { useSettings } from "@/lib/settings";
-import { useActorProfile } from "@/lib/query";
-import { ActorProfile } from "@/lib/atp";
-import { useObjectInspector } from "@/lib/composable";
+import { reactive } from "vue";
 
 import defaultHero from "@/assets/default-hero.jpg?url";
+import Avatar from "@/components/common/Avatar.vue";
+import Dropdown from "@/components/common/Dropdown.vue";
+import Loadable from "@/components/common/Loadable.vue";
+import ListPosts from "@/components/post/ListPosts.vue";
+import ButtonFollow from "@/components/user/ButtonFollow.vue";
+import ListUsers from "@/components/user/ListUsers.vue";
+import ProfileTab from "@/components/user/ProfileTab.vue";
+import { useObjectInspector } from "@/lib/composable";
+import { useActorProfile } from "@/lib/query";
 
 const props = defineProps({
   actor: {
     type: String,
+    required: true,
   },
 });
 
-const { data: _user, suspense } = useActorProfile(props.actor);
-await suspense();
-const user = _user as Ref<ActorProfile>; // TODO: ちょっとどうかと思う
+const { data: user } = await useActorProfile(props.actor);
 
 interface State {
   tab: string;

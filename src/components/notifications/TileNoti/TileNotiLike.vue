@@ -3,18 +3,17 @@ import { PropType } from "vue";
 
 import Avatar from "@/components/common/Avatar.vue";
 import Username from "@/components/common/Username.vue";
-
-import { VoteNotification } from "@/lib/atp";
+import { Notification } from "@/lib/bsky";
 import { usePost } from "@/lib/query";
 
 const props = defineProps({
   noti: {
-    type: Object as PropType<VoteNotification>,
+    type: Object as PropType<Notification.Like>,
     required: true,
   },
 });
 
-const { data: post } = await usePost(props.noti.record.subject.uri);
+const { data: post } = await usePost({ uri: props.noti.record.subject.uri });
 </script>
 
 <template>
@@ -40,7 +39,7 @@ const { data: post } = await usePost(props.noti.record.subject.uri);
         >
       </div>
       <div class="tile-subtitle pre-line p-2 text-small text-muted">
-        {{ post?.record?.text }}
+        {{ post?.record.text }}
       </div>
     </div>
   </article>

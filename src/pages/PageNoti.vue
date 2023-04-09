@@ -1,26 +1,18 @@
 <script setup lang="ts">
-import { onActivated } from "vue";
-
 import ButtonAsync from "@/components/common/ButtonAsync.vue";
-import ListNoti from "@/components/notifications/ListNoti.vue";
 import Loadable from "@/components/common/Loadable.vue";
+import ListNoti from "@/components/notifications/ListNoti.vue";
+import { QueryKeys,useFetchButton } from "@/lib/query";
 
-import { useNotificationFetch, useNotifications } from "@/lib/query";
-
-const { isFetching } = useNotifications();
-const refetch = useNotificationFetch();
-
-onActivated(() => {
-  refetch();
-});
+const { invalidate, isFetching } = useFetchButton(QueryKeys.notifications());
 </script>
 
 <template>
   <div class="columns col-oneline p-2">
     <ButtonAsync
       class="btn btn-secondary col-ml-auto"
-      :onClick="refetch"
-      :forceLoading="isFetching"
+      :on-click="invalidate"
+      :force-loading="isFetching"
     >
       Refresh
     </ButtonAsync>
