@@ -4,7 +4,7 @@
   "dir": "ltr",
   "display": "standalone",
   "name": "Skylight Bluesky Style",
-  "orientation": "any",
+  "orientation": "portrait",
   "short_name": "Skylight B",
   "start_url": "https://skylight.louis-c-novel.com/#/",
   "id": "/#/",
