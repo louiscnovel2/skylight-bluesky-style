@@ -72,6 +72,8 @@ git clone https://github.com/louiscnovel2/skylight-bluesky-style.git
 cd /home/louis/skylight-bluesky-style
 ```
 
+## ローカル環境で稼働する場合
+
 ### npmのビルド
 
 ```
