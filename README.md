@@ -135,7 +135,8 @@ IPアドレスとユーザー名とパスワードを入力して、ログイン
 その後、index.htmlを書き換えます。
 
 ```
-vim /var/www/html/index.html
+sudo apt install vim
+sudo vim /var/www/html/index.html
 ```
 
 `href`の値を全部消して`./manifest.json`へと書き換えて下さい。
