@@ -99,7 +99,7 @@ npm run build
 **louisは自分のユーザー名に変えてください！！**
 
 ```
-cp -pR /home/louis/skylight-bluesky-style/dist/* /var/www/html/
+sudo cp -pR /home/louis/skylight-bluesky-style/dist/* /var/www/html/
 ```
 
 これでドメインにアクセスするとちゃんと表示されるはずです。
