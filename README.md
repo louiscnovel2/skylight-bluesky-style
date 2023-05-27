@@ -110,7 +110,19 @@ https://asameshicode.com/deploy-vue-app/
 
 ## PWA対応について
 
-PWAに対応するには、`/var/www/html`に以下のファイルを全部コピーして下さい。
+PWAに対応するには、以下の方法の通りにします。
+
+パーミッションを一時的に777にします。
+
+```
+sudo chmod -R 777 /var/www/html
+```
+
+[WinSCP](https://forest.watch.impress.co.jp/library/software/winscp/)をダウンロードします。
+
+IPアドレスとユーザー名とパスワードを入力して、ログインします。
+
+以下のファイルを全部ドラッグアンドドロップで`/var/www/html`にアップロードします。
 
 ・manifest.json
 
@@ -133,6 +145,12 @@ vim /var/www/html/index.html
 ```
 
 そうするとPWAのインストールボタンが表示されます。
+
+最後にパーミッションを775にします。
+
+```
+sudo chmod -R 775 /var/www/html
+```
 
 お疲れ様でした。
 
