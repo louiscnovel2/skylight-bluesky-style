@@ -4,7 +4,7 @@
 
 Skylight Bluesky Style
 
-https://skylight.louis-c-novel.com/#/
+https://louis-c-novel.com/#/
 
 ## 環境
 
