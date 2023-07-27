@@ -196,5 +196,9 @@ main[data-v-6261e796] {
 }
 */
 
+/* 自分のプロフィールページにフォローボタンが表示されてしまう問題を修正 */
+.column.col-auto > .btn.btn-primary{
+    display: none;
+}
 
 
