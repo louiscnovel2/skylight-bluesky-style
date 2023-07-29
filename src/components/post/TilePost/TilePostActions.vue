@@ -51,13 +51,17 @@ const post = computed(() => props.feed.post);
     >
 
     <!-- いいねした後にBootstrap iconがHeartからHeart fillへとアイコンが変更する -->
+<template>
+  <div>
     <TilePostActionButton
       aria-label="like"
       :icon-class="isLiked ? 'bi bi-heart-fill' : 'bi bi-heart'"
       @click="toggleLike"
     />
+  </div>
+</template>
 
-    <script>
+<script>
 export default {
   data() {
     return {
@@ -88,6 +92,7 @@ export default {
   },
 };
 </script>
+
 
     
       {{ post.upvoteCount }}
