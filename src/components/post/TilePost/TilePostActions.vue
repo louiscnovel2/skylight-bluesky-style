@@ -49,11 +49,6 @@ const post = computed(() => props.feed.post);
         })
       "
     >
-
-
-
-
-    
       {{ post.upvoteCount }}
     </TilePostActionButton>
   </div>
