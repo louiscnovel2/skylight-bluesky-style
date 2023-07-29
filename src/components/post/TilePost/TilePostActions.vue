@@ -50,48 +50,7 @@ const post = computed(() => props.feed.post);
       "
     >
 
-    <!-- いいねした後にBootstrap iconがHeartからHeart fillへとアイコンが変更する -->
-<template>
-  <div>
-    <TilePostActionButton
-      aria-label="like"
-      :icon-class="isLiked ? 'bi bi-heart-fill' : 'bi bi-heart'"
-      @click="toggleLike"
-    />
-  </div>
-</template>
 
-<script>
-export default {
-  data() {
-    return {
-      isLiked: false,
-    };
-  },
-  methods: {
-    toggleLike() {
-      // いいね状態を切り替える
-      this.isLiked = !this.isLiked;
-
-      // ここでいいねをサーバーに送信するなどの処理を追加することができます。
-      // 例えば、upvoteメソッドを呼び出すなどの操作を行います。
-      // このコードではサーバーへの送信は模擬的なものとしています。
-      if (this.isLiked) {
-        this.upvote({
-          cid: post.cid,
-          uri: post.uri,
-        });
-      }
-    },
-    upvote(payload) {
-      // ここで実際にサーバーにいいねを送信する処理を行います。
-      // サーバーにリクエストを送信していいねを記録するなどの操作を行います。
-      // この例ではシンプルにログを出力しているだけですが、実際のアプリケーションではサーバーとの通信を行うことになります。
-      console.log("Upvoting...", payload);
-    },
-  },
-};
-</script>
 
 
     
