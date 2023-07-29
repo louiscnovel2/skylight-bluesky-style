@@ -49,6 +49,14 @@ const post = computed(() => props.feed.post);
         })
       "
     >
+
+    <!-- いいねした後にBootstrap iconがHeartからHeart fillへとアイコンが変更する -->
+    <TilePostActionButton
+      aria-label="like"
+      :icon-class="isLiked ? 'bi bi-heart-fill' : 'bi bi-heart'"
+      @click="toggleLike"
+    />
+    
       {{ post.upvoteCount }}
     </TilePostActionButton>
   </div>
