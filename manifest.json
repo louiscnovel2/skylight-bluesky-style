@@ -25,7 +25,33 @@
       "type": "image/png"
     }
   ],
-  "shortcuts": []
+  "shortcuts": [
+    {
+      "name": "ホーム",
+      "url": "https://skylight.louis-c-novel.com/#/",
+      "description": "ホームTLを表示します。"
+    },
+    {
+      "name": "通知",
+      "url": "https://skylight.louis-c-novel.com/#/notifications",
+      "description": "通知を表示します"
+    },
+    {
+      "name": "検索",
+      "url": "https://skylight.louis-c-novel.com/#/search",
+      "description": "ユーザーを検索出来ます。"
+    },
+    {
+      "name": "プロフィール",
+      "url": "https://skylight.louis-c-novel.com/#/profile",
+      "description": "自分のプロフィールを表示します。"
+    },
+    {
+      "name": "設定",
+      "url": "https://skylight.louis-c-novel.com/#/settings",
+      "description": "設定出来ます。"
+    }
+  ]
 }
 
 
