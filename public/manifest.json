@@ -24,33 +24,6 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "shortcuts": [
-    {
-      "name": "ホーム",
-      "url": "https://skylight-bluesky-style.vercel.app/#/",
-      "description": "ホームTLを表示します。"
-    },
-    {
-      "name": "通知",
-      "url": "https://skylight-bluesky-style.vercel.app/#/notifications",
-      "description": "通知を表示します"
-    },
-    {
-      "name": "検索",
-      "url": "https://skylight-bluesky-style.vercel.app/#/search",
-      "description": "ユーザーを検索出来ます。"
-    },
-    {
-      "name": "プロフィール",
-      "url": "https://skylight-bluesky-style.vercel.app/#/profile",
-      "description": "自分のプロフィールを表示します。"
-    },
-    {
-      "name": "設定",
-      "url": "https://skylight-bluesky-style.vercel.app/#/settings",
-      "description": "設定出来ます。"
-    }
   ]
 }
 
