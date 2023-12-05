@@ -12,6 +12,20 @@
   "categories": [
     "social"
   ],
+    "screenshots": [
+  {
+    "src": "https://github.com/louiscnovel2/skylight-bluesky-style/blob/main/public/screenshots-pc.png",
+    "sizes": "1904x920",
+    "type": "image/png",
+    "form_factor": "wide",
+  },
+  {
+    "src": "https://github.com/louiscnovel2/skylight-bluesky-style/blob/main/public/screenshots-mobile.jpg",
+    "sizes": "1080x2400",
+    "type": "image/jpg",
+    "form_factor": "narrow",
+  }
+],
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/louiscnovel2/skylight-bluesky-style/main/public/192.png",
