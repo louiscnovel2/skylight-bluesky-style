@@ -4,11 +4,19 @@
 
 Skylight Bluesky Style
 
-https://skylight.louis-c-novel.com/#/
+https://skylight-bluesky-style.vercel.app/#/
+
+## Raspberry Pi時の方法
+
+以下に書くのは、Raspberry Pi 3Bを使っていたときの方法となります。
+
+現在はVercelを使っているので、この方法ではありません。
+
+何卒ご了承下さい。
 
 ## 環境
 
-・Raspberry Pi 3 Model B
+・Raspberry Pi 3B
 
 ## インストール
 
