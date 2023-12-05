@@ -1,6 +1,6 @@
 import "spectre.css";
 import "./style.css";
-import "../serviceworker.js";
+import "../public/serviceworker.js";
 import "../public/manifest.json";
 import "../public/192.png";
 import "../public/512.png";
