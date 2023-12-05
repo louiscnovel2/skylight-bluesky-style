@@ -1,9 +1,9 @@
 import "spectre.css";
 import "./style.css";
 import "../serviceworker.js";
-import "../manifest.json";
-import "../192.png";
-import "../512.png";
+import "../public/manifest.json";
+import "../public/192.png";
+import "../public/512.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { VueQueryPlugin } from "@tanstack/vue-query";
